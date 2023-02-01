@@ -24,5 +24,6 @@ export default defineNuxtConfig({
         autoImports: ['defineStore', 'storeToRefs'],
       },
     ],
+    'nuxt-icon',
   ],
 });
