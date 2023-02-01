@@ -25,5 +25,6 @@ export default defineNuxtConfig({
       },
     ],
     'nuxt-icon',
+    '@nuxtjs/web-vitals',
   ],
 });

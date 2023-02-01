@@ -12,6 +12,7 @@
     "@nuxt/image-edge": "1.0.0-27919678.2f5b64b",
     "@nuxtjs/google-fonts": "3.0.0-1",
     "@nuxtjs/tailwindcss": "^6.3.0",
+    "@nuxtjs/web-vitals": "^0.2.2",
     "@pinia/nuxt": "^0.4.6",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
