@@ -4,6 +4,7 @@ specifiers:
   '@nuxt/image-edge': 1.0.0-27919678.2f5b64b
   '@nuxtjs/google-fonts': 3.0.0-1
   '@nuxtjs/tailwindcss': ^6.3.0
+  '@pinia/nuxt': ^0.4.6
   '@typescript-eslint/eslint-plugin': ^5.50.0
   '@typescript-eslint/parser': ^5.50.0
   '@vueuse/core': ^9.12.0
@@ -26,6 +27,7 @@ dependencies:
 devDependencies:
   '@nuxt/image-edge': 1.0.0-27919678.2f5b64b
   '@nuxtjs/tailwindcss': 6.3.0
+  '@pinia/nuxt': 0.4.6_typescript@4.9.5
   '@typescript-eslint/eslint-plugin': 5.50.0_go4drrxstycfikanvu45pi4vgq
   '@typescript-eslint/parser': 5.50.0_4vsywjlpuriuw3tl5oq6zy5a64
   '@vueuse/core': 9.12.0
@@ -1160,6 +1162,19 @@ packages:
       - supports-color
       - ts-node
       - webpack
+    dev: true
+
+  /@pinia/nuxt/0.4.6_typescript@4.9.5:
+    resolution: { integrity: sha512-HjrYEfLdFpmsjhicPJgL36jVhzHWukIQPFFHGTSF84Cplu+f2nY2XHKqe9ToHzE9rLee2RjLOwAzOnXa/I/u6A== }
+    dependencies:
+      '@nuxt/kit': 3.1.1
+      pinia: 2.0.29_typescript@4.9.5
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - typescript
+      - vue
     dev: true
 
   /@rollup/plugin-alias/4.0.3_rollup@3.12.0:
@@ -4958,6 +4973,23 @@ packages:
   /pify/2.3.0:
     resolution: { integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog== }
     engines: { node: '>=0.10.0' }
+    dev: true
+
+  /pinia/2.0.29_typescript@4.9.5:
+    resolution: { integrity: sha512-5z/KpFecq/cIgfeTnulJXldiLcTITRkTe3N58RKYSj0Pc1EdR6oyCdnf5A9jLoVwBqX5LtHhd0kGlpzWvk9oiQ== }
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.5.0
+      typescript: 4.9.5
+      vue-demi: 0.13.11
     dev: true
 
   /pkg-types/1.0.1:

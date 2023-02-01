@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   srcDir: 'src/',
 
+  imports: {
+    dirs: ['./store'],
+  },
+
   modules: [
     '@vueuse/nuxt',
     '@nuxt/image-edge',
@@ -12,6 +16,12 @@ export default defineNuxtConfig({
         families: {
           Inter: true,
         },
+      },
+    ],
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore', 'storeToRefs'],
       },
     ],
   ],
