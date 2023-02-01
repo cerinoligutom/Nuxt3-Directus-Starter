@@ -1,3 +1,3 @@
 <template>
-  <NuxtPage />
+  <NuxtPage class="font-inter" />
 </template>

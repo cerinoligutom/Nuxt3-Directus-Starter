@@ -2,5 +2,17 @@
 export default defineNuxtConfig({
   srcDir: 'src/',
 
-  modules: ['@vueuse/nuxt', '@nuxt/image-edge'],
+  modules: [
+    '@vueuse/nuxt',
+    '@nuxt/image-edge',
+    '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          Inter: true,
+        },
+      },
+    ],
+  ],
 });
