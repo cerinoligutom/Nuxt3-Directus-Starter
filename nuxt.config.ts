@@ -2,5 +2,5 @@
 export default defineNuxtConfig({
   srcDir: 'src/',
 
-  modules: ['@vueuse/nuxt'],
+  modules: ['@vueuse/nuxt', '@nuxt/image-edge'],
 });
