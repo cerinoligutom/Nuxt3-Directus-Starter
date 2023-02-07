@@ -36,6 +36,10 @@ module.exports = {
     {
       files: ['*.yaml', '*.yml'],
       parser: 'yaml-eslint-parser',
+      rules: {
+        'yml/quotes': 'off',
+        'yml/no-empty-mapping-value': 'off',
+      },
     },
   ],
 };
