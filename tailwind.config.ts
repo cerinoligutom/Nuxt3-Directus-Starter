@@ -4,10 +4,13 @@ import type { Config } from 'tailwindcss';
 export default <Partial<Config>>{
   theme: {
     extend: {
+      spacing: {
+        spacer: '1rem',
+      },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };

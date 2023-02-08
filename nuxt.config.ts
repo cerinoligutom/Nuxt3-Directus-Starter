@@ -10,6 +10,8 @@ const runtimeConfig: NuxtConfig['runtimeConfig'] = {
 export default defineNuxtConfig({
   runtimeConfig,
 
+  css: ['@/assets/styles/main.css'],
+
   srcDir: 'src/',
 
   imports: {
@@ -39,7 +41,7 @@ export default defineNuxtConfig({
     [
       'nuxt-directus',
       {
-        url: runtimeConfig.directus.url,
+        url: runtimeConfig.directus?.url,
       },
     ],
   ],
