@@ -21,7 +21,12 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@nuxt/image-edge',
-    '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/tailwindcss',
+      {
+        cssPath: '~/assets/styles/tailwind.css',
+      },
+    ],
     [
       '@nuxtjs/google-fonts',
       {
