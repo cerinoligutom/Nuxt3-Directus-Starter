@@ -1,11 +1,15 @@
 export default defineNuxtRouteMiddleware((to) => {
   const token = useDirectusToken();
 
-  if (!token.value) {
-    return navigateTo({ name: 'login' });
+  if (['/login', '/register'].includes(to.path)) {
+    if (token.value) {
+      return navigateTo({ name: 'index' });
+    } else {
+      return;
+    }
   }
 
-  if (['/login', '/register'].includes(to.path)) {
-    return navigateTo('/');
+  if (!token.value) {
+    return navigateTo({ name: 'login' });
   }
 });
