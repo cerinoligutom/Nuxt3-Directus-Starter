@@ -5,7 +5,7 @@
       <BaseInput v-model="form.password" type="password" label="Password" class="mb-2" />
       <BaseInput v-model="form.confirmPassword" type="password" label="Confirm Password" class="mb-2" />
       <BaseButton class="w-full mt-4 mb-2 btn-primary" @click="signUp()">Sign Up</BaseButton>
-      <NuxtLink class="block w-full mt-4 text-center link link-primary" to="/login">Already have an account? Login.</NuxtLink>
+      <NuxtLink class="block w-full mt-4 text-center link link-primary" :to="{ name: 'login' }">Already have an account? Login.</NuxtLink>
     </div>
   </div>
 </template>

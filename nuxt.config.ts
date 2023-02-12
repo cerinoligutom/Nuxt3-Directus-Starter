@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@nuxt/image-edge',
+    'nuxt-typed-router',
     [
       '@nuxtjs/tailwindcss',
       {

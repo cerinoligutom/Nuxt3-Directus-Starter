@@ -23,6 +23,7 @@ specifiers:
   nuxt: ^3.1.1
   nuxt-directus: ^3.2.2
   nuxt-icon: ^0.2.10
+  nuxt-typed-router: ^2.3.4
   prettier: ^2.8.3
   typescript: ^4.9.5
 
@@ -49,6 +50,7 @@ devDependencies:
   nuxt: 3.1.1_4vsywjlpuriuw3tl5oq6zy5a64
   nuxt-directus: 3.2.2
   nuxt-icon: 0.2.10
+  nuxt-typed-router: 2.3.4
   prettier: 2.8.3
   typescript: 4.9.5
 
@@ -8773,6 +8775,10 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash-es/4.17.21:
+    resolution: { integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw== }
+    dev: true
+
   /lodash._reinterpolate/3.0.0:
     resolution: { integrity: sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA== }
     dev: true
@@ -9700,6 +9706,22 @@ packages:
       - rollup
       - supports-color
       - vue
+    dev: true
+
+  /nuxt-typed-router/2.3.4:
+    resolution: { integrity: sha512-4u7ecYsRsWQsl3nxVhZWwxVDynggTBMMRhjtqkVKsRlk/ob9yMxIZ/0WLJFvWzrqwZ4qmARPiNvHoMmhNVmBaQ== }
+    dependencies:
+      '@nuxt/kit': 3.1.1
+      chalk: 5.2.0
+      defu: 6.1.2
+      lodash-es: 4.17.21
+      log-symbols: 5.1.0
+      mkdirp: 1.0.4
+      pathe: 1.1.0
+      prettier: 2.8.3
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt/3.1.1_4vsywjlpuriuw3tl5oq6zy5a64:
