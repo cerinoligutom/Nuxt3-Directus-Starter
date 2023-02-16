@@ -8,6 +8,7 @@ specifiers:
   '@pinia/nuxt': ^0.4.6
   '@typescript-eslint/eslint-plugin': ^5.50.0
   '@typescript-eslint/parser': ^5.50.0
+  '@vueuse/components': ^9.12.0
   '@vueuse/core': ^9.12.0
   '@vueuse/nuxt': ^9.12.0
   daisyui: ^2.50.0
@@ -35,6 +36,7 @@ devDependencies:
   '@pinia/nuxt': 0.4.6_typescript@4.9.5
   '@typescript-eslint/eslint-plugin': 5.50.0_go4drrxstycfikanvu45pi4vgq
   '@typescript-eslint/parser': 5.50.0_4vsywjlpuriuw3tl5oq6zy5a64
+  '@vueuse/components': 9.12.0
   '@vueuse/core': 9.12.0
   '@vueuse/nuxt': 9.12.0_nuxt@3.1.1
   daisyui: 2.50.0
@@ -3940,6 +3942,17 @@ packages:
 
   /@vue/shared/3.2.45:
     resolution: { integrity: sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg== }
+    dev: true
+
+  /@vueuse/components/9.12.0:
+    resolution: { integrity: sha512-U468xbr2PISuWepeOU4J8zkVj0aDhiFe230oDhnIm8mHtcS9gM2vSKTB32InxTs6kVma60yAGdqBySkyFNX/+w== }
+    dependencies:
+      '@vueuse/core': 9.12.0
+      '@vueuse/shared': 9.12.0
+      vue-demi: 0.13.11
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
     dev: true
 
   /@vueuse/core/9.12.0:
