@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   srcDir: 'src/',
 
   imports: {
-    dirs: ['./store'],
+    dirs: ['./store/**', './composables/**'],
   },
 
   modules: [
