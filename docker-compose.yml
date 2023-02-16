@@ -60,5 +60,8 @@ services:
       # (see https://docs.directus.io/self-hosted/config-options#general)
       # PUBLIC_URL: 'https://directus.example.com'
 
+    env_file:
+      - .env
+
 networks:
   directus:
